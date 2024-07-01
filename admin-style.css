@@ -1,0 +1,47 @@
+.wrap {
+    background: #f1f1f1;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.wrap h2 {
+    color: #333;
+}
+
+.form-table th {
+    width: 20%;
+}
+
+.form-table td input[type="text"],
+.form-table td input[type="password"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"]#toptex-import-button {
+    background-color: #0073aa; /* WordPress blue */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]#toptex-import-button:hover {
+    background-color: #005077;
+}
+
+input[type="submit"]#toptex-import-button:active {
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.3);
+}
