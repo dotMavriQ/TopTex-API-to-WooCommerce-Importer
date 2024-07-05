@@ -73,10 +73,11 @@ function toptex_import_from_api($api_key, $username, $password)
     // Decode JSON for pretty printing
     $formatted_result = json_encode(json_decode($result), JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
-    echo '<div style="background-color: #f1f1f1; padding: 10px; margin-top: 20px; border-radius: 5px; overflow: auto; font-family: monospace;">';
-    echo '<strong>API Response:</strong>';
-    echo '<pre>' . htmlspecialchars($formatted_result) . '</pre>';
-    echo '</div>';
+    // Output inside a textarea for user-friendly display
+    echo '<textarea readonly style="width: 60%; height: 150px; background-color: #f1f1f1; border-radius: 5px; font-family: monospace; padding: 10px; overflow-y: auto; resize: none;">';
+    echo htmlspecialchars($formatted_result);
+    echo '</textarea>';
 }
+
 
 ?>
