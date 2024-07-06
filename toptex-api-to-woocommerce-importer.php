@@ -37,7 +37,7 @@ function toptex_importer_page()
                             value="<?php echo isset($_POST['password']) ? esc_attr($_POST['password']) : ''; ?>" /></td>
                 </tr>
             </table>
-            <?php submit_button('Import from TopTex API'); ?>
+            <?php submit_button('Test API', 'primary', 'submit', true); ?>
         </form>
         <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['api_key'], $_POST['username'], $_POST['password'])) {
@@ -78,6 +78,4 @@ function toptex_import_from_api($api_key, $username, $password)
     echo htmlspecialchars($formatted_result);
     echo '</textarea>';
 }
-
-
 ?>
