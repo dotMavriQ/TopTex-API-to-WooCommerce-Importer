@@ -1,5 +1,5 @@
 ### TopTex API to WooCommerce Importer
-**Warning**: The TopTex-API script was initially meant to be the only script. However, due to time constraints, this project uses `curl` for simplicity. Future updates might include AJAX or alternative methods for a more robust solution.
+**Warning**: The TopTex-API script was initially meant to be the only script. However, due to time constraints, this project uses `curl` for simplicity. Future updates might include AJAX or alternative methods for a more robust solution. With sufficient time on my hands...it might even become modular and functional enough to be a market ready plugin.
 
 Made quite swiftly in collaboration with a party as a Case Study/Work Test.
 
